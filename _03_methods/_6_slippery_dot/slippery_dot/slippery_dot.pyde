@@ -3,31 +3,33 @@ import math
 # that jumps to new location each time you click on it.
  
 # 1. Create three integer variables to represent the x, y, and the size of the ellipse
-x = 500
-y = 500
+x = 250
+y = 250
 sz = 100
               
 def setup():
     # 2. Set the size of your sketch
-    
+    size(500,500)
     pass
      
 def draw():
     # 3. Set the background color of your sketch
-
+    background(0,100,100)
     # 4. Draw an ellipse using the variables created at the top of the sketch for the
     #    location and size of your ellipse.  Make sure it fits in the window.
     #    Change the variables if it does not.
-
+    ellipse(x,y,sz,sz)
     
     pass
 
 #******** This method gets called automatically when you press the mouse ************/
 def mousePressed():
+    global x
+    global y
     # 5. Change these variables to the names of the x and y variables you made
     
     # 6. Create an integer variable called distance
-    
+    distance = 0
     # 7. The get_distance_from_mouse() function below returns a number.
     #    Set the value of your distance variable to the value returned by the
     #    get_distance_from_mouse function. You will need to pass the x and y location 

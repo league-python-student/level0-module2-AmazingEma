@@ -14,11 +14,14 @@ def setup():
 
 def draw():
     # Write code here that uses the drawMole method to put a mole in each of the holes
-
+    draw_mole(200,200,100)
+    draw_mole(70,119,100)
+    draw_mole(300,60,100)
+    draw_mole(297,350,100)
 
     pass
 
-def draw_mole(mole_x, mole_y):
+def draw_mole(mole_x, mole_y, mole_z):
      noStroke()
      fill(125, 93, 43)
      ellipse(mole_x, mole_y, 60, 60) # face
